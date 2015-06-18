@@ -45,6 +45,12 @@ angular.module('periApp', ['ionic','controllers','periApp.services'])
             url:'/medico/edit/:id/:crm',
             controller:'MedicoEditController',
             templateUrl:'views/edit-medico.html'
+        })
+		
+		.state('createPaciente',{
+            url:'/paciente/new',
+            controller:'PacienteCreationController',
+            templateUrl:'views/add-paciente.html'
         });
 		
 		$urlRouterProvider.otherwise('/medicos');
